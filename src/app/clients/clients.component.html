@@ -1,3 +1,24 @@
+<div class="row">
+  <div class="col-8 m-auto">
+    <form [formGroup]="formGroupClient">
+
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="email" formControlName="name" class="form-control" id="nome" placeholder="name">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" formControlName="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+
+      <div class="mb-3 d-flex justify-content-end">
+        <button class="btn btn-primary" (click)="Save()">Salvar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 <table class="table table-striped">
     <thead>
       <tr>
@@ -14,4 +35,5 @@
       </tr>
     </tbody>
 </table>
+
 
